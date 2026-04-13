@@ -196,7 +196,7 @@ const valueReadinessAction: Action = {
     _options?: Record<string, unknown>,
     callback?: HandlerCallback
   ) => {
-    const userId = message.id ?? "default";
+    const userId = (message.entityId ?? message.roomId ?? "default") as string;
     const text = ((message.content as { text?: string }).text ?? "").toLowerCase().trim();
 
     let session = sessions.get(userId);

@@ -3,7 +3,8 @@
   "username": "valuescope",
   "plugins": [
     "@elizaos/plugin-bootstrap",
-    "@elizaos/plugin-groq"
+    "@elizaos/plugin-groq",
+    "@elizaos/plugin-valuescope"
   ],
   "settings": {
     "model": "llama-3.1-8b-instant",
